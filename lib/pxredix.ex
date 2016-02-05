@@ -11,6 +11,8 @@ defmodule Pxredix do
       supervisor(Pxredix.Endpoint, []),
       # Start the Ecto repository
       supervisor(Pxredix.Repo, []),
+      # Add the Redix connection pool to the app as well
+      supervisor(Pxredix.RedixPool, []),
       # Here you could define other workers and supervisors as children
       # worker(Pxredix.Worker, [arg1, arg2, arg3]),
     ]

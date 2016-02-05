@@ -36,6 +36,8 @@ defmodule Pxredix.Web do
 
       import Pxredix.Router.Helpers
       import Pxredix.Gettext
+
+      alias Pxredix.RedixPool, as: Redis
     end
   end
 
